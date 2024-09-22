@@ -22,7 +22,7 @@ const App = () => {
       const parsedData = JSON.parse(jsonData); 
 
       
-      const response = await axios.post('http://localhost:5000/bfhl', {
+      const response = await axios.post('https://bajaj-bhfl-ra2111003010567-txyd.onrender.com/bfhl', {
         data: parsedData.data,
         file_b64: parsedData.file_b64 || '',
       });
